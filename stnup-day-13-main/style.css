@@ -1,0 +1,49 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.food-card{
+    width: 360px;
+    border-radius: 12px;
+    border: 2px solid grey;
+    padding: 10px;
+}
+.food-img{
+    border-radius: 12px;
+    width: 100%;
+}
+.btn{
+    border: none;
+    background-color:purple;
+    font-weight: bolder;
+    color: white;
+    padding: 13px 32px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+img{
+    height: 300px;
+}
+.food-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.add{
+    display:none;
+}
+@media(max-width:576px){
+    .food-flex{
+        flex-wrap: wrap-reverse;
+    }
+    .food-card{
+        margin: 10px 0px;
+    }
+    .add{
+        display:block;
+    }
+    .order{
+        display: none;
+    }
+}
